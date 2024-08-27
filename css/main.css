@@ -1,0 +1,140 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid white; */
+}
+
+a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+}
+
+body {
+    background-image: linear-gradient(
+        #4078c0, #e44ed7
+    );
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 239, 230);
+}
+
+footer {
+    background-color: rgb(32, 32, 32);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+iframe {
+    display: block;
+}
+
+nav {
+    background-color: rgb(32, 32, 32);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main_content {
+    padding: 2em 2em;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(19, 19, 19);
+}
+
+#page_links
+
+#projects {
+    padding: 2em;
+}
+
+.project_div {
+    display: flex;
+    justify-content: center;
+    margin: 4em 5px;
+    border-radius: 5px;
+}
+
+.project_desc {
+    margin: 5px;
+    width: 500px;
+    text-wrap: wrap;
+}
+
+.project_vid {
+    margin: 5px;
+}
+
+.text_align {
+    text-align: center;
+}
+
+.resume_contact {
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.resume_contact:hover {
+    border: 1px solid salmon;
+    border-radius: 3px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+/* resume modal css */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal_content {
+    background-color: #416186;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 15%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.resume_button {
+    margin-top: 20px;
+    width: 175px;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid salmon;
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+.resume_button:hover {
+    background-color: rgb(47, 50, 236);
+    border-radius: 2px;
+    transition: 0.3s;
+}
