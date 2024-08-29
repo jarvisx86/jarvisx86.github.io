@@ -1,0 +1,68 @@
+.resume_contact {
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.resume_contact:hover {
+    border: 1px solid salmon;
+    border-radius: 3px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.contact_me {
+    padding-right: 10px;
+}
+
+/* resume modal css */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal_content {
+    background-color: #416186;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 15%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.resume_button {
+    margin-top: 20px;
+    width: 175px;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid salmon;
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+.resume_button:hover {
+    background-color: rgb(47, 50, 236);
+    border-radius: 2px;
+    transition: 0.3s;
+}

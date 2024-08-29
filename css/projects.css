@@ -1,0 +1,24 @@
+#projects {
+    padding: 2em;
+}
+
+.project_div {
+    display: flex;
+    justify-content: center;
+    margin: 4em 5px;
+    border-radius: 5px;
+}
+
+.project_desc {
+    margin: 5px;
+    width: 500px;
+    text-wrap: wrap;
+}
+
+.project_vid {
+    margin: 5px;
+}
+
+iframe {
+    display: block;
+}
