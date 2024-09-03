@@ -4,6 +4,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -46,4 +47,16 @@ nav {
 
 .text_align {
     text-align: center;
+}
+
+.project_links {
+    font-size: 12px;
+    margin: 0px 15px;
+    padding: 10px;
+}
+
+.project_links:hover {
+    border-bottom: 3px solid #e44ed7;
+    border-radius: 3px;
+    transition: 0.2s;
 }

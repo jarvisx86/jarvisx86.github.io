@@ -1,15 +1,18 @@
-
 // load projects
 var projectsArray = [
     {
         link: "https://www.youtube.com/embed/BWv44mx2zcM?si=8oFKuyYUqmJtMJyQ",
-        title: "Space Battle (Unity/C#)",
+        title: "Space Battle", 
+        id: "space_battle",
+        platform: "(Unity/C#)",
         description: "\nA top-down 2D asteroids clone. This was the first game that I completed. The ship enemies use the A* Pathfinding algorithm to find a path to the player."
 
     },
     {
         link: "https://www.youtube.com/embed/o6jPsjURkNw?si=0d1xk54O62YHtDG5",
-        title: "Cyber Blaster (Unity/C#)",
+        title: "Cyber Blaster",
+        id: "cyber_blaster",
+        platform: "(Unity/C#)",
         description: 
         "\nCyber Blaster is a 2D side-scrolling platformer where you blast/platform your way through enemies and obstacles in a cyberpunk-esque world. "
         + "This started out as a game jam project which quickly grew beyound the scope of a week.\n\n" 
@@ -20,11 +23,14 @@ var projectsArray = [
     },
     {
         link:"https://www.youtube.com/embed/yOyd9GxFznQ?si=vgeiAUtyQdjZRXpt",
-        title: "Scream Secret (Unity/C#)",
+        title: "Scream Secret",
+        id: "scream_secret",
+        platform: "(Unity/C#)",
         description: "\nFPS horror game"
     }
 ];
 
+var projectLinks = document.getElementById("project_links");
 var projects = document.getElementById("projects")
 
 for (var i = 0; i < projectsArray.length; i++) {
@@ -38,7 +44,7 @@ for (var i = 0; i < projectsArray.length; i++) {
     newVideoElement.className = "project_desc";
 
     var newVideoTitle = document.createElement("h2");
-    newVideoTitle.innerText = project.title;
+    newVideoTitle.innerText = project.title + " " + project.platform;
 
     var newVideoDesc = document.createElement("p");
     newVideoDesc.innerText = project.description;
@@ -55,6 +61,14 @@ for (var i = 0; i < projectsArray.length; i++) {
     
     newProjectElement.append(newVideoElement);
     newProjectElement.append(newVideoFrame);
+    newProjectElement.id = project.id;
 
     projects.append(newProjectElement);
+
+    var newProjectLink = document.createElement("a");
+    newProjectLink.className = "project_links";
+    newProjectLink.innerText = project.title;
+    newProjectLink.href = "#" + project.id;
+
+    projectLinks.append(newProjectLink);
 }
