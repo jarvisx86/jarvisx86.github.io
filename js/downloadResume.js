@@ -60,20 +60,5 @@ var btn = document.getElementById("resume_button");
 
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = () => {
-    var resumeFileUrl = createResumeFileLink();
-    var urlLink = document.getElementById("resume_link");
-    urlLink.href = resumeFileUrl;
-
-    modal.style.display = "block";
-}
-
-span.onclick = () => {
-    modal.style.display = "none";
-}
-
-window.onclick = (event) => {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+var resumeFileUrl = createResumeFileLink();
+btn.href = resumeFileUrl;
