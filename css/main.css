@@ -60,3 +60,7 @@ nav {
     border-radius: 3px;
     transition: 0.2s;
 }
+
+.spacer {
+    height: 200px;
+}

@@ -4,19 +4,20 @@
 
 .project_div {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 4em 5px;
     border-radius: 5px;
 }
 
 .project_desc {
     margin: 5px;
-    width: 500px;
+    width: 50%;
     text-wrap: wrap;
 }
 
 .project_vid {
     margin: 5px;
+    width: 50%;
 }
 
 iframe {

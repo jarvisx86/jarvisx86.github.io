@@ -37,6 +37,9 @@ for (var i = 0; i < projectsArray.length; i++) {
 
     var project = projectsArray[i];
 
+    var newProjectSpacer = document.createElement("div");
+    newProjectSpacer.className = "spacer";
+
     var newProjectElement = document.createElement("div");
     newProjectElement.className = "project_div";
 
@@ -64,6 +67,10 @@ for (var i = 0; i < projectsArray.length; i++) {
     newProjectElement.id = project.id;
 
     projects.append(newProjectElement);
+
+    if (i < projectsArray.length - 1) {
+        projects.append(newProjectSpacer);
+    }
 
     var newProjectLink = document.createElement("a");
     newProjectLink.className = "project_links";
