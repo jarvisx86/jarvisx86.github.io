@@ -1,15 +1,14 @@
 // load projects
 var projectsArray = [
     {
-        link: "https://www.youtube.com/embed/BWv44mx2zcM?si=8oFKuyYUqmJtMJyQ",
-        title: "Space Battle", 
-        id: "space_battle",
+        link:"https://www.youtube.com/embed/yOyd9GxFznQ?si=vgeiAUtyQdjZRXpt",
+        title: "Scream Secret",
+        id: "scream_secret",
         platform: "(Unity/C#)",
-        description: "\nA top-down 2D asteroids clone. This was the first game that I completed. The ship enemies use the A* Pathfinding algorithm to find a path to the player."
-
+        description: "\nFPS horror game"
     },
     {
-        link: "https://www.youtube.com/embed/o6jPsjURkNw?si=0d1xk54O62YHtDG5",
+        link: "https://www.youtube.com/embed/qjgxjcG8Wl0?si=lKvQH7-WhQZ0-zsN",
         title: "Cyber Blaster",
         id: "cyber_blaster",
         platform: "(Unity/C#)",
@@ -22,12 +21,18 @@ var projectsArray = [
         + "an system using C# events (not Unity events) to execute the newly decoupled logic. This was more of an experiement to get used to using these types of events.\n\n"
     },
     {
-        link:"https://www.youtube.com/embed/yOyd9GxFznQ?si=vgeiAUtyQdjZRXpt",
-        title: "Scream Secret",
-        id: "scream_secret",
+        link: "https://www.youtube.com/embed/oBTZOmK9A-w?si=JYMrSW565Q2Im---",
+        title: "Space Battle", 
+        id: "space_battle",
         platform: "(Unity/C#)",
-        description: "\nFPS horror game"
+        description: "\nA top-down 2D asteroids clone. This was the first project that I created from start to finish. Like any  other asteroids game, the " 
+        + "goal is to destory as many asteroids and othe enemies as possible before you run out of lives. Beware - you are in Klingon territory and they "
+        + "don't take kindly to trespassers!\n\n"
+        + "The emeny ships use the A* Pathfinding algorithm to find a path to the player. They have a limited firing range so keep them at a distance."
+        + " If they get too close... well, I bet you can guess what happens next. Fun side note: the enemy laser sound effects are taken from the Star Wars X-wing."
+
     }
+    
 ];
 
 var projectLinks = document.getElementById("project_links");
@@ -46,7 +51,7 @@ for (var i = 0; i < projectsArray.length; i++) {
     var newVideoElement = document.createElement("div");
     newVideoElement.className = "project_desc";
 
-    var newVideoTitle = document.createElement("h2");
+    var newVideoTitle = document.createElement("h3");
     newVideoTitle.innerText = project.title + " " + project.platform;
 
     var newVideoDesc = document.createElement("p");
@@ -73,7 +78,7 @@ for (var i = 0; i < projectsArray.length; i++) {
     }
 
     var newProjectLink = document.createElement("a");
-    newProjectLink.className = "project_links";
+    newProjectLink.className = "project_link";
     newProjectLink.innerText = project.title;
     newProjectLink.href = "#" + project.id;
 

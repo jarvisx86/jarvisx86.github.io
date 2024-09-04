@@ -6,18 +6,27 @@
     display: flex;
     justify-content: space-between;
     margin: 4em 5px;
+    padding: 2em;
     border-radius: 5px;
+    background-color: rgba(19, 19, 19, 0.85);
+    transition: 0.3s;
 }
 
+.project_div:hover {
+    border: 1px solid rgba(69, 223, 243, 0.85);
+    background-color: rgba(54, 52, 52, 0.85);
+    transition: 0.3s;
+}
+
+
 .project_desc {
-    margin: 5px;
+    margin-right: 20px;
     width: 50%;
     text-wrap: wrap;
 }
 
 .project_vid {
-    margin: 5px;
-    width: 50%;
+    margin-left: 20px;
 }
 
 iframe {

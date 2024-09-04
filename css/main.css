@@ -1,11 +1,24 @@
 @import url(projects.css);
 @import url(resume.css);
 
+
+@font-face {
+    font-family: "Outer Space";
+    src: url(../fonts/Outer_Space.ttf);
+}
+
+@font-face {
+    font-family: "Space Xrebron";
+    src: url(../fonts/space_Xrebron.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    /* border: 1px solid blue; */
 }
+
 
 a {
     text-decoration: none;
@@ -13,12 +26,36 @@ a {
 }
 
 body {
-    background-image: linear-gradient(
-        #4078c0, #e44ed7
-    );
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(245, 239, 230);
+    font-size: 16px;
+    background: linear-gradient(-45deg, #2f1e5a, #651480, #1f45c2, #19b28e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* h1 {
+    font-family: "Space Xrebron";
+    font-size: 72px;
+    color: rgb(209, 167, 104);
+}
+
+h2 {
+    font-family: "Space Xrebron";
+    font-size: 64px;
+} */
 
 footer {
     background-color: rgb(32, 32, 32);
@@ -42,25 +79,35 @@ nav {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-    background-color: rgb(19, 19, 19);
+    background-color: rgba(19, 19, 19, 0.85);
 }
 
 .text_align {
     text-align: center;
 }
 
-.project_links {
+#project_links {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    height: 75px;
+    background-color: rgba(19, 19, 19, 0.85);
+    border-radius: 5px;
+}
+
+.project_link {
     font-size: 12px;
     margin: 0px 15px;
     padding: 10px;
 }
 
-.project_links:hover {
+.project_link:hover {
     border-bottom: 3px solid #e44ed7;
     border-radius: 3px;
+    background-color: rgba(54, 52, 52, 0.85);
     transition: 0.2s;
 }
 
 .spacer {
-    height: 200px;
+    height: 50px;
 }
