@@ -4,27 +4,20 @@
         <title>Kyle Hardy</title>
         <link rel="stylesheet" href="css/main.css"/>     
     </head>
-
-    
     <body>
-        <video autoplay muted loop id="myVideo">
-            <source src="https://www.youtube.com/embed/qjgxjcG8Wl0?si=lKvQH7-WhQZ0-zsN" type="video/mp4">
-        </video>
-        <nav id="nav_bar" class="">
-            <div>   
-                <a href="index.html">
-                    <h1 class="title-text">Kyle Hardy</h1>
-                </a>
-            </div>
+
+        <nav id="nav_bar">
             <div>
-                <a class="resume_contact" href="contact.html">Resume</a>
+                <a class="resume_contact" href="contact.html">Resume & Contact</a>
             </div>            
         </nav>
 
-        <div id="main_content">
-            <div style="padding: 2em;">
-                <div class="project_div">
-                    <p class="project_desc">
+        <div id="hero-section">
+            <video autoplay muted loop controls disablePictureInPicture controlsList="nodownload" id="hero-video">
+                <source src="vid/Space Battle - 2D asteroids clone made in Unity.mp4" type="video/mp4">
+            </video>
+            <div id="hero-welcome">
+                <p>
                     <span style="font-size: 24px; font-weight: bold;">Hello and welcome!</span> 
                     <br/>
                     <br/>
@@ -32,19 +25,20 @@
                     I started out as a software developer for a large tech company and began developing/experimenting with different game dev platforms (MonoGame, Unity, Unreal) in my spare time.<br><br>
                     Feel free to check out my projects and let me know if you have any questions!<br><br>
                     Play On~
-                    </p>
-                    <img style="margin: 5px;" src="img/logo.png" width="400px" height="400px"/>
-                </div>
+                </p>
+                <img style="margin: 5px;" src="img/logo.png" width="400px" height="400px"/>
             </div>
+        </div>
+
+        <div id="main_content">
             <div id="projects">
-                <h2>Projects</h2>
+                <h1 style="margin-top: 1em;">Projects</h1>
                 <div id="project_links">
 
                 </div>
                 <!-- show project videos below! -->
             </div>
         </div>
-            
         <script src="js/projects.js"></script>
     </body>
     <footer>KHD &copy;2024</footer>

@@ -52,13 +52,7 @@ function createResumeFileLink() {
         return textFile;   
 }
 
-
-// script starts here
-var modal = document.getElementById("resume_modal");
-
 var btn = document.getElementById("resume_button");
-
-var span = document.getElementsByClassName("close")[0];
 
 var resumeFileUrl = createResumeFileLink();
 btn.href = resumeFileUrl;
