@@ -16,9 +16,7 @@ var projectsArray = [
         "\nCyber Blaster is a 2D side-scrolling platformer where you blast/platform your way through enemies and obstacles in a cyberpunk-esque world. "
         + "This started out as a game jam project which quickly grew beyound the scope of a week.\n\n" 
         + "I created all of the pixel art using Aesprite and set all of the Unity sprite filters to point/no filter to get that classic pixel look. The actual platforming mechanic "
-        + "utilizes Unity's 2D physics system. \n\n"
-        + "As development went along I found a fair amount of code the could be reused across different objects. I started breaking out these pieces of functionality on the different enmey types and implemented "
-        + "an system using C# events (not Unity events) to execute the newly decoupled logic. This was more of an experiement to get used to using these types of events.\n\n"
+        + "utilizes Unity's 2D physics system."
     },
     {
         link: "https://www.youtube.com/embed/oBTZOmK9A-w?si=JYMrSW565Q2Im---",
@@ -28,7 +26,7 @@ var projectsArray = [
         description: "\nA top-down 2D asteroids clone. This was the first project that I created from start to finish. Like any  other asteroids game, the " 
         + "goal is to destory as many asteroids and othe enemies as possible before you run out of lives. Beware - you are in Klingon territory and they "
         + "don't take kindly to trespassers!\n\n"
-        + "The emeny ships use the A* Pathfinding algorithm to find a path to the player. They have a limited firing range so keep them at a distance."
+        + "The enemy ships use the A* Pathfinding algorithm to find a path to the player. They have a limited firing range so keep them at a distance."
         + " If they get too close... well, I bet you can guess what happens next. Fun side note: the enemy laser sound effects are taken from the Star Wars X-wing."
 
     }
