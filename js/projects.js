@@ -1,12 +1,12 @@
 // load projects
 var projectsArray = [
-    {
-        link:"https://www.youtube.com/embed/yOyd9GxFznQ?si=vgeiAUtyQdjZRXpt",
-        title: "Scream Secret",
-        id: "scream_secret",
-        platform: "(Unity/C#)",
-        description: "\nFPS horror game"
-    },
+    // {
+    //     link:"https://www.youtube.com/embed/yOyd9GxFznQ?si=vgeiAUtyQdjZRXpt",
+    //     title: "Scream Secret",
+    //     id: "scream_secret",
+    //     platform: "(Unity/C#)",
+    //     description: "\nFPS horror game"
+    // },
     {
         link: "https://www.youtube.com/embed/qjgxjcG8Wl0?si=lKvQH7-WhQZ0-zsN",
         title: "Cyber Blaster",

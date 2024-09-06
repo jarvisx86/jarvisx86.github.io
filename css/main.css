@@ -34,7 +34,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 75px;
-    overflow: hidden;
 }
 
 body {
@@ -92,7 +91,7 @@ footer {
 }
 
 #hero-section {
-    height: 900px;
+    height: 700px;
     display: flex;
     align-items: center;
     overflow: hidden;
