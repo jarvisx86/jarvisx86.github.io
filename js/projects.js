@@ -1,12 +1,12 @@
 // load projects
 var projectsArray = [
-    // {
-    //     link:"https://www.youtube.com/embed/yOyd9GxFznQ?si=vgeiAUtyQdjZRXpt",
-    //     title: "Scream Secret",
-    //     id: "scream_secret",
-    //     platform: "(Unity/C#)",
-    //     description: "\nFPS horror game"
-    // },
+    {
+        link:"",
+        title: "Scream Secret",
+        id: "scream_secret",
+        platform: "(Unity/C#)",
+        description: "\nFPS horror game - COMING SOON!"
+    },
     {
         link: "https://www.youtube.com/embed/qjgxjcG8Wl0?si=lKvQH7-WhQZ0-zsN",
         title: "Cyber Blaster",
@@ -29,7 +29,17 @@ var projectsArray = [
         + "The enemy ships use the A* Pathfinding algorithm to find a path to the player. They have a limited firing range so keep them at a distance."
         + " If they get too close... well, I bet you can guess what happens next. Fun side note: the enemy laser sound effects are taken from the Star Wars X-wing."
 
+    },
+    {
+        link: "https://www.youtube.com/embed/XvZt-fzC2e0?si=eC9uHyUn2RC6enhs",
+        title: "Feed Fred",
+        id: "feed_fred",
+        platform: "(Unity/C#)",
+        description: "\nMeet Fred The Fish. He's always hungry and he loves pizza. Feed him as much as you can before the screen fills up with trash. "
+        + "This was my second completed project using Unity and was submitted for FishFest 2024 Game Jam."
+
     }
+
     
 ];
 
