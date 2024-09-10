@@ -43,15 +43,15 @@ var projectsArray = [
     
 ];
 
-var projectLinks = document.getElementById("project_links");
+var menuLinks = document.getElementById("menu_links");
 var projects = document.getElementById("projects")
 
 for (var i = 0; i < projectsArray.length; i++) {
 
     var project = projectsArray[i];
 
-    var newProjectSpacer = document.createElement("div");
-    newProjectSpacer.className = "spacer";
+    // var newProjectSpacer = document.createElement("div");
+    // newProjectSpacer.className = "spacer";
 
     var newProjectElement = document.createElement("div");
     newProjectElement.className = "project_div";
@@ -61,34 +61,39 @@ for (var i = 0; i < projectsArray.length; i++) {
 
     var newVideoTitle = document.createElement("h3");
     newVideoTitle.innerText = project.title + " " + project.platform;
+    newVideoTitle.className = "project_title";
 
-    var newVideoDesc = document.createElement("p");
-    newVideoDesc.innerText = project.description;
+    // var newVideoDesc = document.createElement("p");
+    // newVideoDesc.innerText = project.description;
     
+    // var newVideoFrame = document.createElement("iframe");
+    // newVideoFrame.className = "project_vid";
+    // newVideoFrame.title = "YouTube video player";
+    // newVideoFrame.width = 560;
+    // newVideoFrame.height = 315;
+    // newVideoFrame.src = project.link;
+
     var newVideoFrame = document.createElement("iframe");
     newVideoFrame.className = "project_vid";
     newVideoFrame.title = "YouTube video player";
-    newVideoFrame.width = 560;
-    newVideoFrame.height = 315;
+    newVideoFrame.width = 350;
+    newVideoFrame.height = 450;
     newVideoFrame.src = project.link;
 
-    newVideoElement.append(newVideoTitle);
-    newVideoElement.append(newVideoDesc);
+    // newVideoElement.append(newVideoDesc);
     
     newProjectElement.append(newVideoElement);
     newProjectElement.append(newVideoFrame);
+    newProjectElement.append(newVideoTitle);
     newProjectElement.id = project.id;
 
     projects.append(newProjectElement);
 
-    if (i < projectsArray.length - 1) {
-        projects.append(newProjectSpacer);
-    }
-
+    // add game links to menu
     var newProjectLink = document.createElement("a");
-    newProjectLink.className = "project_link";
+    newProjectLink.className = "menu_link";
     newProjectLink.innerText = project.title;
     newProjectLink.href = "#" + project.id;
 
-    projectLinks.append(newProjectLink);
+    menuLinks.append(newProjectLink);
 }
