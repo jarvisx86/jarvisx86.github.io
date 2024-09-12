@@ -43,15 +43,14 @@ a {
 }
 
 footer {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
+    padding-left: 10em;
+    padding-right: 10em;
+    margin-top: 4em;
+    font-size: 16px;
 }
 
 #main_content {
-    padding: 10em;
+    padding: 5em 10em;
     overflow: hidden;
 }
 
@@ -68,6 +67,11 @@ footer {
     min-height: 100%;
 }
 
+#khd-twitter-x {
+    font-size: 16px;
+    background-color: rgba(102, 101, 101, 0.479);
+}
+
 #menu_links {
     position: relative;
     margin: 25px;
@@ -81,6 +85,37 @@ footer {
     backdrop-filter: blur(20px);
 }
 
+.contact_me {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    padding: 0px 5px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.fa {
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 30px;
+    margin: 0px 5px;
+    text-align: center;
+    background-color: rgba(102, 101, 101, 0.479);
+
+  }
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+  
+
 .menu_link {
     font-size: 16px;
     margin: 0px 15px;
@@ -92,6 +127,20 @@ footer {
     border-radius: 3px;
     background-color: rgba(102, 101, 101, 0.479);
     transition: 0.1s;
+}
+
+.social_media_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spacer {
+    height: 35px;
+}
+
+.text_align {
+    text-align: center;
 }
 
 .welcome_section {
@@ -108,12 +157,4 @@ footer {
     border: 1px solid rgba(69, 223, 243, 0.85);
     background-color: rgba(54, 52, 52, 0.85);
     transition: 0.3s;
-}
-
-.spacer {
-    height: 35px;
-}
-
-.text_align {
-    text-align: center;
 }
