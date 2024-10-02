@@ -8,19 +8,8 @@
 }
 
 .project_div {
-    /* display: flex;
-    justify-content: space-between; */
-    /* margin: 4em 5px; */
-    /* padding: 2em; */
     border-radius: 5px;
 }
-
-/* .project_div:hover {
-    border: 1px solid rgba(69, 223, 243, 0.85);
-    background-color: rgba(54, 52, 52, 0.85);
-    transition: 0.3s;
-    scale: 1.05;
-} */
 
 .project_title {
     margin-top: 20px;
@@ -39,8 +28,6 @@
 }
 
 .project_vid:hover {
-    /* border: 1px solid rgba(69, 223, 243, 0.85);
-    background-color: rgba(54, 52, 52, 0.85); */
     transition: 0.3s;
     scale: 1.05;
 }
