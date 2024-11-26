@@ -2,10 +2,10 @@
 var projectsArray = [
     {
         link:"",
-        title: "Scream Secret",
-        id: "scream_secret",
-        platform: "(Unity/C#)",
-        description: "\nFPS horror game - COMING SOON!"
+        title: "Lycan",
+        id: "lycan",
+        platform: "(Unreal/Blueprints)",
+        description: "\nThird person action adventure - COMING SOON!"
     },
     {
         link: "https://www.youtube.com/embed/qjgxjcG8Wl0?si=lKvQH7-WhQZ0-zsN",
@@ -90,10 +90,10 @@ for (var i = 0; i < projectsArray.length; i++) {
     projects.append(newProjectElement);
 
     // add game links to menu
-    var newProjectLink = document.createElement("a");
-    newProjectLink.className = "menu_link";
-    newProjectLink.innerText = project.title;
-    newProjectLink.href = "#" + project.id;
+    // var newProjectLink = document.createElement("a");
+    // newProjectLink.className = "menu_link";
+    // newProjectLink.innerText = project.title;
+    // newProjectLink.href = "#" + project.id;
 
-    menuLinks.append(newProjectLink);
+    // menuLinks.append(newProjectLink);
 }
