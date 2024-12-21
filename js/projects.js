@@ -39,19 +39,16 @@ var projectsArray = [
         + "This was my second completed project using Unity and was submitted for FishFest 2024 Game Jam."
 
     }
-
-    
 ];
 
+
+// script starts here!
 var menuLinks = document.getElementById("menu_links");
 var projects = document.getElementById("projects")
 
 for (var i = 0; i < projectsArray.length; i++) {
 
     var project = projectsArray[i];
-
-    // var newProjectSpacer = document.createElement("div");
-    // newProjectSpacer.className = "spacer";
 
     var newProjectElement = document.createElement("div");
     newProjectElement.className = "project_div";
@@ -63,16 +60,6 @@ for (var i = 0; i < projectsArray.length; i++) {
     newVideoTitle.innerText = project.title + " " + project.platform;
     newVideoTitle.className = "project_title";
 
-    // var newVideoDesc = document.createElement("p");
-    // newVideoDesc.innerText = project.description;
-    
-    // var newVideoFrame = document.createElement("iframe");
-    // newVideoFrame.className = "project_vid";
-    // newVideoFrame.title = "YouTube video player";
-    // newVideoFrame.width = 560;
-    // newVideoFrame.height = 315;
-    // newVideoFrame.src = project.link;
-
     var newVideoFrame = document.createElement("iframe");
     newVideoFrame.className = "project_vid";
     newVideoFrame.title = "YouTube video player";
@@ -80,8 +67,6 @@ for (var i = 0; i < projectsArray.length; i++) {
     newVideoFrame.height = 450;
     newVideoFrame.src = project.link;
 
-    // newVideoElement.append(newVideoDesc);
-    
     newProjectElement.append(newVideoElement);
     newProjectElement.append(newVideoFrame);
     newProjectElement.append(newVideoTitle);
@@ -89,11 +74,5 @@ for (var i = 0; i < projectsArray.length; i++) {
 
     projects.append(newProjectElement);
 
-    // add game links to menu
-    // var newProjectLink = document.createElement("a");
-    // newProjectLink.className = "menu_link";
-    // newProjectLink.innerText = project.title;
-    // newProjectLink.href = "#" + project.id;
-
-    // menuLinks.append(newProjectLink);
 }
+// end script
