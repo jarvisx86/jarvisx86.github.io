@@ -1,11 +1,11 @@
 // load projects
 var projectsArray = [
     {
-        link:"",
-        title: "Lycan",
-        id: "lycan",
-        platform: "(Unreal/Blueprints)",
-        description: "\nThird person action adventure - COMING SOON!"
+        link: "",
+        title: "Scream Secret",
+        id: "scream_secret",
+        platform: "(Unity/C#)",
+        description: "\nFPS Horror game - COMING SOON!"
     },
     {
         link: "https://www.youtube.com/embed/qjgxjcG8Wl0?si=lKvQH7-WhQZ0-zsN",
@@ -17,6 +17,13 @@ var projectsArray = [
         + "This started out as a game jam project which quickly grew beyound the scope of a week.\n\n" 
         + "I created all of the pixel art using Aesprite and set all of the Unity sprite filters to point/no filter to get that classic pixel look. The actual platforming mechanic "
         + "utilizes Unity's 2D physics system."
+    },
+    {
+        link: "",
+        title: "Shuttle Escape",
+        id: "shuttle_escape",
+        platform: "(Unity/C#)",
+        description: ""
     },
     {
         link: "https://www.youtube.com/embed/oBTZOmK9A-w?si=JYMrSW565Q2Im---",
@@ -42,24 +49,22 @@ var projectsArray = [
 ];
 
 
-// script starts here!
-var menuLinks = document.getElementById("menu_links");
-var projects = document.getElementById("projects")
+let buildProjectElement = (project) => {
 
-for (var i = 0; i < projectsArray.length; i++) {
-
-    var project = projectsArray[i];
-
+    // create new project <div> element
     var newProjectElement = document.createElement("div");
     newProjectElement.className = "project_div";
 
+    // create new <div> for the project vidpe
     var newVideoElement = document.createElement("div");
     newVideoElement.className = "project_desc";
 
+    // add <h3> for project title
     var newVideoTitle = document.createElement("h3");
     newVideoTitle.innerText = project.title + " " + project.platform;
     newVideoTitle.className = "project_title";
 
+    // add
     var newVideoFrame = document.createElement("iframe");
     newVideoFrame.className = "project_vid";
     newVideoFrame.title = "YouTube video player";
@@ -72,6 +77,16 @@ for (var i = 0; i < projectsArray.length; i++) {
     newProjectElement.append(newVideoTitle);
     newProjectElement.id = project.id;
 
+    return newProjectElement;
+};
+
+// script starts here!
+var menuLinks = document.getElementById("menu_links");
+var projects = document.getElementById("projects");
+
+for (var i = 0; i < projectsArray.length; i++) {
+
+    var newProjectElement = buildProjectElement(projectsArray[i]);
     projects.append(newProjectElement);
 
 }
