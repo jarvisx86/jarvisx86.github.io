@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1.6;
+    letter-spacing: 1px;
 }
 
 #resume-section {
