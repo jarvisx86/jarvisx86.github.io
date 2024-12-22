@@ -19,13 +19,6 @@ var projectsArray = [
         + "utilizes Unity's 2D physics system."
     },
     {
-        link: "",
-        title: "Shuttle Escape",
-        id: "shuttle_escape",
-        platform: "(Unity/C#)",
-        description: ""
-    },
-    {
         link: "https://www.youtube.com/embed/oBTZOmK9A-w?si=JYMrSW565Q2Im---",
         title: "Space Battle", 
         id: "space_battle",
