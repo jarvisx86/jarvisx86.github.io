@@ -2,10 +2,10 @@
 var projectsArray = [
     {
         link: "",
-        title: "Scream Secret",
-        id: "scream_secret",
+        title: "Laser Defender",
+        id: "laser_defender",
         platform: "(Unity/C#)",
-        description: "\nFPS Horror game - COMING SOON!"
+        description: ""
     },
     {
         link: "https://www.youtube.com/embed/qjgxjcG8Wl0?si=lKvQH7-WhQZ0-zsN",
