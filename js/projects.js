@@ -1,12 +1,12 @@
 // load projects
 var projectsArray = [
     {
-        link: "",
+        link: "https://www.youtube.com/embed/l4o5U9Vo3-w?si=r7egM3iloXtvF6C2",
         title: "Laser Defender",
         id: "laser_defender",
         platform: "(Unity/C#)",
         description: "",
-        game: "games/LazerDefender/index.html"
+        game: "games/LaserDefender/index.html"
     },
     {
         link: "https://www.youtube.com/embed/qjgxjcG8Wl0?si=lKvQH7-WhQZ0-zsN",
@@ -59,6 +59,7 @@ let buildProjectElement = (project) => {
     // add <h3> for project title
     var newVideoTitle = document.createElement("a");
     newVideoTitle.href = project.game;
+    newVideoTitle.target = "_blank";
 
     var title = document.createElement("h3");
     title.innerText = project.title + " " + project.platform;
@@ -71,7 +72,7 @@ let buildProjectElement = (project) => {
     var newVideoFrame = document.createElement("iframe");
     newVideoFrame.className = "project_vid";
     newVideoFrame.title = "YouTube video player";
-    newVideoFrame.width = 350;
+    newVideoFrame.width = 500;
     newVideoFrame.height = 450;
     newVideoFrame.src = project.link;
 
