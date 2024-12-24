@@ -121,6 +121,7 @@ footer {
     margin: 0px 15px;
     text-align: center;
     padding: 20px;
+    cursor: pointer;
 }
 
 .menu_link:hover {
