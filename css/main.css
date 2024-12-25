@@ -22,7 +22,8 @@ body {
     font-family: "Archivo", sans-serif;
     color: rgb(245, 239, 230);
     font-size: 16px;
-    background-image: url("https://blz-contentstack-images.akamaized.net/v3/assets/blta8f9a8e092360c6c/blt7c50d5be83c2a253/61df4315819be248ba631457/2600_Featured_Games.webp?format=webply&amp;quality=80&amp;auto=webp");
+    background: url("https://blz-contentstack-images.akamaized.net/v3/assets/blta8f9a8e092360c6c/blt7c50d5be83c2a253/61df4315819be248ba631457/2600_Featured_Games.webp?format=webply&amp;quality=80&amp;auto=webp") 
+        no-repeat center center fixed;
 }
 
 h1 {
